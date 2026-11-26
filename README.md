@@ -10,7 +10,7 @@
 
 <p>
   <a href="README_ZH.md"><img src="https://img.shields.io/badge/文档-简体中文-blue?style=flat-square" alt="简体中文" /></a>
-  <img src="https://img.shields.io/badge/Antigravity-Plugin%20v1.1.0-111827?style=flat-square" alt="Antigravity Plugin" />
+  <img src="https://img.shields.io/badge/Antigravity-Plugin%20v1.2.0-111827?style=flat-square" alt="Antigravity Plugin" />
   <img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?style=flat-square" alt="Windows" />
   <img src="https://img.shields.io/badge/Output-2K%20%2F%204K%20Ready-D97706?style=flat-square" alt="2K/4K" />
   <img src="https://img.shields.io/badge/Blender%20Library-18%20PBR%20%2B%204%20Lights-EA7600?style=flat-square" alt="Blender PBR Library" />
@@ -34,6 +34,7 @@ Most AI rendering tools look great at a glance — **until your client zooms in 
 - **Automated 1:1 Native-Pixel Macro Self-QA** — High-res renders (`>= 1920px`) are automatically sliced at 100% native pixels into 4–6 macro inspection crops (fabrics, tabletop props, chair contact, wood grain, ceiling coves) and red-team scored across 9 dimensions before handoff.
 - **Layout-Locked Google Flow Rendering (`gflow-cli`)** — Drives Nano Banana 2.1 `i2i` + 2K/4K upscaling via MCP & CLI directly from your own Google Flow account.
 - **Bundled Znzmo 18 PBR Material & 4 Architectural Lighting Library + Blender 5.x Craft Guardrails** — 19 MB ready-to-use Blender 5.x Asset Browser library (Travertine, Calacatta Viola Marble, Burl Wood, Bouclé, Microcement, Reeded Glass, 5 ANSI IES profiles, and dappled tree Gobos), plus `AgX` vs `Khronos PBR Neutral` color management, draft-first diff iteration (`960×540 / 32 samples`), and 8 GB GPU VRAM/motion-blur playbooks.
+- **Practical Interior Design & Ergonomic Guardrails (`archviz-design-guardrails`)** — Prevents "render-only" traps (glossy tiles + spotlight glare, blocked appliance clearances, desk-drawer knee collisions, kitchen vs. bathroom basin mix-ups, low-headroom ceiling bloat) and explains the real-world *why* behind every design choice.
 - **Optional Full CAD → 3D → AI Bridge** — One-click bootstrap for AutoCAD MCP, SketchUp MCP (port `9876`), and Blender MCP (port `9877`).
 
 ---
@@ -78,9 +79,10 @@ archviz-studio/
 ├── rules/
 │   └── AGENTS.md                      # Always-on Mandatory Self-QA Gate (CAD veto + 1:1 crop audit)
 ├── skills/
-│   ├── archviz-bootstrap/SKILL.md     # One-click new-machine installer & troubleshooting runbook
-│   ├── archviz-gflow/SKILL.md         # Layout-locked i2i, 2K/4K upscale & QA execution workflow
-│   └── archviz-blender-craft/SKILL.md # Blender 5.x compatibility & PBR material craft guardrails
+│   ├── archviz-bootstrap/SKILL.md          # One-click new-machine installer & troubleshooting runbook
+│   ├── archviz-gflow/SKILL.md              # Pre-Render Inventory, --look presets, i2i, 2K/4K upscale & QA
+│   ├── archviz-blender-craft/SKILL.md      # Blender 5.x color/VRAM guardrails & PBR material craft
+│   └── archviz-design-guardrails/SKILL.md  # Interior ergonomics, MEP clearances & low-maintenance rationales
 ├── scripts/
 │   ├── setup_archviz_env.ps1          # Automated Windows dependency & library installer
 │   └── register_blender_asset_lib.py  # Headless Blender Asset Browser registration

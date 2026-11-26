@@ -10,7 +10,7 @@
 
 <p>
   <a href="README.md"><img src="https://img.shields.io/badge/Docs-English-blue?style=flat-square" alt="English" /></a>
-  <img src="https://img.shields.io/badge/Antigravity-Plugin%20v1.1.0-111827?style=flat-square" alt="Antigravity Plugin" />
+  <img src="https://img.shields.io/badge/Antigravity-Plugin%20v1.2.0-111827?style=flat-square" alt="Antigravity Plugin" />
   <img src="https://img.shields.io/badge/平台-Windows%2010%2F11-0078D6?style=flat-square" alt="Windows" />
   <img src="https://img.shields.io/badge/高清输出-支持%202K%20%2F%204K-D97706?style=flat-square" alt="2K/4K" />
   <img src="https://img.shields.io/badge/Blender%20素材库-18%20套PBR%20%2B%204%20套灯光-EA7600?style=flat-square" alt="Blender PBR Library" />
@@ -34,6 +34,7 @@
 - **1:1 原生像素微距自动质检**：凡是 `≥ 1920px` 的高清成图，AI 都会用 Pillow 按 100% 原生像素自动切出 4~6 组关键特写（沙发抱枕、茶几摆件、单椅落地、木皮柜体、吊顶灯槽），按 9 大维度红队打分，任何一项 `< 8/10` 自主精修后再交付。
 - **基于 Google Flow (`gflow-cli`) 的锁形出图与 2K/4K 扩图**：调用 Nano Banana 2.1 `i2i` 垫图渲染，自动配置好防卡顿排队锁与项目复用。
 - **内置 19 MB《知末风自建素材库》+ Blender 5.x 避坑手册**：18 套建筑 PBR 材质 + 4 套建筑灯光预设 + 5 个 IES + 树影 Gobo，并内置 `AgX` 与 `Khronos PBR Neutral` 色彩保真指南、低采样草图迭代流及 8GB 显卡防爆显存规范。
+- **实用室内设计避坑红线（`archviz-design-guardrails`）**：覆盖空间人体工学尺寸、嵌入式家电预留、亮光砖+无主灯防眩避雷、厨卫台盆场景区分与去家务化设计，并在你追问时清晰讲透每一条设计背后的生活与工程原因。
 - **可选打通 AutoCAD / SketchUp / Blender**：按需一键挂载三大专业软件 MCP（自动隔离端口避免冲突）。
 
 ---
@@ -83,7 +84,7 @@
 git clone https://github.com/wqwin/archviz-studio.git "$env:USERPROFILE\.gemini\config\plugins\archviz-studio"
 ```
 
-*(或使用离线压缩包：将 `archviz-studio-v1.1.0.zip` 解压到 `C:\Users\<你的用户名>\.gemini\config\plugins\`，确保路径为 `...\plugins\archviz-studio\plugin.json`。)*
+*(或使用离线压缩包：将 `archviz-studio-v1.2.0.zip` 解压到 `C:\Users\<你的用户名>\.gemini\config\plugins\`，确保路径为 `...\plugins\archviz-studio\plugin.json`。)*
 
 ### 第二步：让 AI 自动装完所有底层工具
 打开 **Antigravity**（在 `Customizations → Installed → Plugins` 里就能看到 **Archviz Studio**），直接发一句话：
