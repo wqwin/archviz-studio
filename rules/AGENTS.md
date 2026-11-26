@@ -4,10 +4,8 @@ Before presenting any final 3D / interior / architectural render (including Cycl
 
 ## 0. Strict CAD / White-Model / Gray-Model Fidelity (Zero-Tolerance Veto)
 - **Drawings & Models Are Law**: Every architectural/interior render MUST strictly follow the latest approved **CAD drawing**, **white/clay model (`白模`)**, or **gray model (`灰模`)**. Never pull an outdated early blockout when a newer complete layout exists.
-- **Object-by-Object Inventory Audit**: Before any delivery, explicitly cross-check every major architectural element and furniture item in the render against the CAD / white / gray model:
-  - Structural geometry: walls, ceiling coves, beams, door/window panel counts, and camera perspective.
-  - Built-ins & millwork: TV feature walls, wood slats, cabinets, consoles, and trim.
-  - Hero furniture & placement: sofas, lounge chairs, coffee tables, dining sets, planters, and rugs — exact **presence, count, position, orientation, and proportion**.
+- **Pre-Render Spatial & Furniture Inventory**: Before rendering or modeling, explicitly enumerate the structural envelope (walls, ceiling coves, door/window panel count, camera angle), built-ins, and every hero furniture item (presence, count, position, orientation, proportion). On dimensioned CAD/plans, trust written dimension labels over pixel ratios.
+- **Post-Render Side-by-Side & Object-by-Object Audit**: Before any delivery, visually compare the render side-by-side against the reference CAD / white / gray model and cross-check every item from the Pre-Render Inventory.
 - **Automatic NO-SHIP Veto**: Dropping, hallucinating, relocating, or distorting any furniture or architectural element defined in the CAD/white/gray model is an **unforgivable NO-SHIP blocker**, regardless of how photorealistic the lighting or textures look. Re-run with the exact complete reference locked before handoff.
 
 ## 1. Mandatory 1:1 Native-Pixel Macro Crop Audit

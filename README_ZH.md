@@ -10,7 +10,7 @@
 
 <p>
   <a href="README.md"><img src="https://img.shields.io/badge/Docs-English-blue?style=flat-square" alt="English" /></a>
-  <img src="https://img.shields.io/badge/Antigravity-Plugin%20v1.0.0-111827?style=flat-square" alt="Antigravity Plugin" />
+  <img src="https://img.shields.io/badge/Antigravity-Plugin%20v1.1.0-111827?style=flat-square" alt="Antigravity Plugin" />
   <img src="https://img.shields.io/badge/平台-Windows%2010%2F11-0078D6?style=flat-square" alt="Windows" />
   <img src="https://img.shields.io/badge/高清输出-支持%202K%20%2F%204K-D97706?style=flat-square" alt="2K/4K" />
   <img src="https://img.shields.io/badge/Blender%20素材库-18%20套PBR%20%2B%204%20套灯光-EA7600?style=flat-square" alt="Blender PBR Library" />
@@ -29,10 +29,11 @@
 
 **Archviz Studio** 把整套专业室内表现工作流封装成了一个开箱即用的 **Antigravity 原生插件**：
 
-- **零容忍图纸/白模锁形（一票否决）**：内置全局强制质检规则（`rules/AGENTS.md`），每次交付前 AI 必须逐物清点墙体、吊顶灯槽、门窗扇数、沙发、单椅、茶几、绿植与柜体——**只要漏掉、多出或挪动任何一件家具，自动判 NO-SHIP 并返工重渲**。
+- **出图前空间家具台账 + 零容忍图纸锁形（一票否决）**：内置全局强制质检规则（`rules/AGENTS.md`）。渲染前先对图纸/白模做全量空间与家具清点（标注尺寸优先于像素比例）；交付前自动生成左右对比拼图并逐物核对——**只要漏掉、多出或挪动任何一件家具，自动判 NO-SHIP 并返工重渲**。
+- **5 套标准化光影预设（`--look`）**：同一机位一键无损切换 `daylight`（自然日景）、`bluehour`（蓝调时刻）、`golden_afternoon`（午后斜阳）、`overcast_soft`（阴天柔光）、`warm_night`（暖灯夜景），色温与光比高度可控。
 - **1:1 原生像素微距自动质检**：凡是 `≥ 1920px` 的高清成图，AI 都会用 Pillow 按 100% 原生像素自动切出 4~6 组关键特写（沙发抱枕、茶几摆件、单椅落地、木皮柜体、吊顶灯槽），按 9 大维度红队打分，任何一项 `< 8/10` 自主精修后再交付。
 - **基于 Google Flow (`gflow-cli`) 的锁形出图与 2K/4K 扩图**：调用 Nano Banana 2.1 `i2i` 垫图渲染，自动配置好防卡顿排队锁与项目复用。
-- **内置 19 MB《知末风自建素材库》**：18 套建筑 PBR 材质（奶油洞石、宝格丽紫奢石、树瘤木皮、羊羔绒、微水泥、长虹玻璃、拉丝香槟金等）+ 4 套建筑灯光预设 + 5 个 IES 光域网 + 树影 Gobo，装有 Blender 时自动注册到资产浏览器。
+- **内置 19 MB《知末风自建素材库》+ Blender 5.x 避坑手册**：18 套建筑 PBR 材质 + 4 套建筑灯光预设 + 5 个 IES + 树影 Gobo，并内置 `AgX` 与 `Khronos PBR Neutral` 色彩保真指南、低采样草图迭代流及 8GB 显卡防爆显存规范。
 - **可选打通 AutoCAD / SketchUp / Blender**：按需一键挂载三大专业软件 MCP（自动隔离端口避免冲突）。
 
 ---
@@ -68,7 +69,7 @@
 git clone https://github.com/wqwin/archviz-studio.git "$env:USERPROFILE\.gemini\config\plugins\archviz-studio"
 ```
 
-*(或使用离线压缩包：将 `archviz-studio-v1.0.0.zip` 解压到 `C:\Users\<你的用户名>\.gemini\config\plugins\`，确保路径为 `...\plugins\archviz-studio\plugin.json`。)*
+*(或使用离线压缩包：将 `archviz-studio-v1.1.0.zip` 解压到 `C:\Users\<你的用户名>\.gemini\config\plugins\`，确保路径为 `...\plugins\archviz-studio\plugin.json`。)*
 
 ### 第二步：让 AI 自动装完所有底层工具
 打开 **Antigravity**（在 `Customizations → Installed → Plugins` 里就能看到 **Archviz Studio**），直接发一句话：
