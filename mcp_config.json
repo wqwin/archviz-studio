@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "archviz-gflow": {
+      "command": "gflow",
+      "args": ["mcp", "run"]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "archviz-studio",
+  "displayName": "Archviz Studio",
+  "version": "1.0.0",
+  "description": "AI Interior & Architectural Visualization Engine for Antigravity: layout-locked Google Flow (gflow-cli) i2i rendering, 2K/4K upscaling, Znzmo 18 PBR Blender materials & 4 lighting presets, optional AutoCAD/SketchUp/Blender MCP bootstrap, and mandatory CAD/white-model 1:1 pixel Self-QA.",
+  "author": {
+    "name": "wqwin",
+    "url": "https://github.com/wqwin"
+  },
+  "homepage": "https://github.com/wqwin/archviz-studio",
+  "repository": "https://github.com/wqwin/archviz-studio",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "帮我初始化 archviz-studio 插件环境并检查 gflow-cli 状态",
+    "按这张白模图用 gflow-cli 出 2K 蓝调时刻效果图，严格保留所有家具并过 1:1 像素质检",
+    "锁定这张图的全部布局与单椅，只把茶几换成宝格丽紫奢石并重渲 2K 效果图"
+  ]
+}

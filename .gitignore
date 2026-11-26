@@ -1,0 +1,6 @@
+# Generated & local temp files
+*.blend1
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
