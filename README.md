@@ -47,6 +47,20 @@ Most AI rendering tools look great at a glance — **until your client zooms in 
 | <img src="assets/showcase/01_clay_model.jpg" alt="Clay Model Input" width="320" /> | <img src="assets/showcase/02_daylight_render.jpg" alt="Daylight Render" width="320" /> | <img src="assets/showcase/03_bluehour_2k.jpg" alt="Blue Hour 2K Render" width="320" /> |
 | *Exact CAD/SketchUp geometry baseline* | *Warm limewash, Calacatta Viola marble, dappled sunlight* | *7800K twilight vs. 2800K cove glow, 100% furniture locked* |
 
+### 🔍 Mandatory Self-QA in Action (Real Defects Caught & Fixed)
+
+Every render must pass **Zero-Tolerance CAD/Model Fidelity** + **1:1 Native-Pixel Macro Inspection** before delivery. Two real defects intercepted and fixed autonomously by `rules/AGENTS.md`:
+
+| 1. Zero-Tolerance Layout Veto: Missing Lounge Chair → 100% Locked Back |
+| :---: |
+| <img src="assets/showcase/qa_01_layout_veto_chair.jpg" alt="Zero-Tolerance Layout Veto: Missing Lounge Chair Fixed" width="880" /> |
+| *An early blockout dropped the cognac leather swivel chair & sheer blinds. The Self-QA gate issued an automatic **NO-SHIP** veto and re-rendered with 100% of the approved layout locked.* |
+
+| 2. 1:1 Native-Pixel Macro Audit: Procedural CG Stripes → Natural Wood Veneer |
+| :---: |
+| <img src="assets/showcase/qa_02_macro_wood_grain.jpg" alt="1:1 Macro QA: Procedural Striped Console Top Fixed to Natural Wood Veneer" width="880" /> |
+| *Invisible in a small preview, a 100% native-pixel crop caught procedural zebra stripes inherited from a CG render on the TV console top (`< 8/10`). Autonomous rework replaced them with natural matte wood veneer (`9.5/10`) without moving a single object.* |
+
 ### Bundled Blender PBR Material & Lighting Library (`19 MB` included)
 
 | 18 Procedural Architectural PBR Materials | 4 Architectural Lighting Presets + 5 IES + Tree Gobo |
